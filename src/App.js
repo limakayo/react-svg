@@ -9,25 +9,27 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <div className="App-intro">
-          {/*<svg className="clip-svg">
+          <svg className="svg-clip">
             <defs>
-              <clipPath id="triangle-mask" clipPathUnits="objectBoundingBox">
-                <polygon points="0 0.87, 0.5 0, 0.5 0, 1 0.87" />
-              </clipPath>
-            </defs>
-          </svg>  
-          <img className="triangle" src="https://source.unsplash.com/6SGax0BAxEI/400x300" alt=""/>*/}
-          <svg className="clip-svg">
-            <defs>
-              <clipPath id="clipping">
-                <polygon id="Star-1" points="98.4999978 153.75 38.2520165 185.424245 49.7583542 118.337123 1.01670635 70.8257603 68.3760155 61.037872 98.5000012 1.1379786e-14 128.624005 61.0378871 195.98331 70.8258091 147.241642 118.337136 158.747982 185.424247"/>
-                <text x="0" y="3.2em">Text</text>
+              <clipPath id="golaPath">
+                <title>My Clip Path</title>
+                <path d="M215,100.3c97.8-32.6,90.5-71.9,336-77.6
+          c92.4-2.1,98.1,81.6,121.8,116.4c101.7,149.9,53.5,155.9,14.7,178c-96.4,54.9,5.4,269-257,115.1c-57-33.5-203,46.3-263.7,20.1
+          c-33.5-14.5-132.5-45.5-95-111.1C125.9,246.6,98.6,139.1,215,100.3z"/>
               </clipPath>
             </defs>
           </svg>
-          <div className="item-clip">
-            <img src="https://img-fotki.yandex.ru/get/5607/5091629.6b/0_612e6_b9039c0d_M.jpg" alt="" />
-          </div>
+          <img style={{ clipPath: "url(#golaPath)" }} src="http://78.media.tumblr.com/tumblr_m5nre6cxkQ1qbs7p5o1_r1_500.jpg" alt="" />
+
+          <svg className="svg-clip">
+            <defs>
+              <clipPath id="saiaPath">
+                <title>My Clip Path</title>
+                <polygon points="273.58 1 118.58 1 1.58 248 392.58 248 273.58 1" />
+              </clipPath>
+            </defs>
+          </svg>
+          <img style={{ clipPath: "url(#saiaPath)" }} src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" />
         </div>
       </div>
     );

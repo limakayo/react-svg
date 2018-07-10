@@ -2,13 +2,13 @@
   text-align: center;
 }
 
-.clip-svg {
+.svg-clip {
   height: 0;
   width: 0;
 }
 
-.item-clip img {
-  clip-path: url(#clipping);
+.gola-clipped {
+  clip-path: url(#golaPath)
 }
 
 .triangle {
